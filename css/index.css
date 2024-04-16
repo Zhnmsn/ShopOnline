@@ -1,0 +1,38 @@
+.wrapper {
+    row-gap: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.article__back { 
+    white-space: pre-wrap;
+    content: "";
+    display: flex;
+    background-image: url('../img/backspace.svg');
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: 2%;
+    justify-content: space-between;
+    max-width: 80%;
+}
+
+.article__back a {
+    color: black; 
+}
+
+.article__title {
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.article {
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.p1 {
+    margin-bottom: 20px;
+}
+.article__text {
+    line-height: 20px;
+}
