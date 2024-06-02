@@ -1,0 +1,256 @@
+.header__container {
+    max-width: 1770px;
+    padding-top: 30px;
+    margin: 0 auto;
+    padding-bottom: 45px;
+}
+
+.nav__word {
+    color: rgb(54, 112, 199);
+}
+
+.list__5::after {
+    content: "";
+    background-image: url("../img/2-img.jpeg");
+    background-repeat: no-repeat;
+    display: block;
+    width: 14px;
+    height: 18px;
+    top: 53px;
+    right: 218px;
+    position: absolute;
+    
+}
+
+
+.nav__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 100px;
+    justify-items: left;
+    align-items: center;
+    grid-template-areas: "name menu search icons1 icons2 icons3";
+}
+.nav__link-img {
+    width: 24px;
+    height: 24px;
+    padding-top: 5px;
+}
+
+.nav__mini-img {
+    justify-self: end;
+}
+.nav__mini-img img {
+    padding-left: 15px;
+}
+.nav__mini-img-text {
+    text-align: center;
+}
+.nav__link {
+    font-family: Open Sans;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 41px;
+    letter-spacing: 6%;
+    justify-self: left;
+}
+
+.nav__input-img {
+    width: 40px;
+    height: 40px;
+    
+}
+
+.nav__link-menu {
+    width: 151px;
+    height: 54px;
+    border-radius: 10px;
+    background: rgb(54, 112, 199);
+    text-align: center;
+    display: block;
+    color: rgb(255, 255, 255);
+    font-family: Lato;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    padding-top: 10px;
+}
+
+.nav__input {
+    border-radius: 30px;
+    background: rgb(239, 239, 239);
+    width: 757px;
+    height: 54px;
+    padding-bottom: 10px;
+    position: relative;
+    border-color: transparent;
+    padding-left: 40px;
+    padding-top: 5px;
+}
+
+.nav__input-link {
+    border-radius: 30px;
+    background: rgb(54, 112, 199);
+    width: 101px;
+    height: 54px;
+    display: block;
+    position: absolute;
+    top: 53px;
+    right: 500px;
+    padding-left: 25px;
+    padding-top: 7px;
+}
+.nav__input::placeholder {
+    color: rgb(143, 143, 143);
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 0%;
+    
+}
+
+.list___1 {
+    grid-area: name;
+}
+.list__2{
+    grid-area: menu;
+}
+.list__3{
+    grid-area: search;
+}
+.list__4 {
+    grid-area: icons1;
+}
+.list__5 {
+    grid-area: icons2;
+}
+.list__6 {
+    grid-area: icons3;
+}
+
+@media(max-width:1024px){
+    .header__container {
+        max-width: 940px;
+        padding-top: 34px;
+        height: 149px;
+    }
+    .nav__input-link {
+        top: 112px;
+        right: 42px;
+    }
+    
+    .nav__list {
+        grid-template-columns: 1fr 1fr 0.5fr 0.5fr 0.5fr;
+        grid-template-rows: 70px 70px;
+        grid-template-areas: 
+        "name . . icons1 icons2 icons3"
+        "menu search search search search search";
+    }
+    
+    .nav__input {
+        width: 700px;
+    }
+    .nav__mini-img {
+        align-self: self-end;
+    }
+    .list__5::after {
+        top: 50px;
+        right: 161px;
+    }
+    .list__5 {
+        justify-self: center;
+    }
+
+}
+
+@media(max-width:768px) {
+    .header__container {
+        max-width: 700px;
+        padding-top: 25px;
+    }
+    .nav__input-link {
+        top: 102px;
+        right: 17px;
+    }
+    .nav__input {
+        width: 540px;
+        padding-left: 30px;
+    }
+    .nav__mini-img {
+        align-self: self-end;
+    }
+    .list__5::after {
+        top: 41px;
+        right: 138px;
+    }
+} 
+
+@media(max-width:320px) {
+    .header__container {
+        max-width: 280px;
+        padding-top: 20px;
+        height: 125px;
+    }
+    .nav__input {
+        width: 280px;
+        height: 30px;
+        padding-left: 16px;
+        padding-top: 8px;
+    }
+    .nav__link {
+        font-size: 18px;
+        letter-spacing: 6%; 
+    }
+    .nav__link-menu {
+        width: 79px;
+        height: 30px;
+        font-size: 12px;
+        vertical-align: middle;
+        padding-top: 6px;
+    }
+    .nav__link-img {
+        width: 14px;
+        height: 14px;
+        vertical-align: middle;
+        padding-top: 0;
+    }
+    .nav__mini-img {
+        width: 30px;
+        height: 30px;
+    }
+    .nav__mini-img-text {
+        display: none;
+    }
+    .nav__input::placeholder {
+        font-size: 8px;
+        
+    }
+    .nav__input-link {
+        width: 50px;
+        height: 30px;
+        top: 120px;
+        right: 20px;
+        padding-left: 17px;
+    }
+    .nav__input-img {
+        width: 15px;
+        height: 15px;
+        display: block;
+        left: 1px;
+    }
+    .list__5::after {
+        top: 68px;
+        right: 51px;
+    }
+    .nav__list {
+        grid-template-columns: repeat(6, 0.3fr);
+        grid-template-rows: repeat(3, 30px);
+        grid-template-areas: 
+        "name name name . . ."
+        "menu menu . icons1 icons2 icons3"
+        "search search search search search search";
+        row-gap: 20px;
+    }
+}

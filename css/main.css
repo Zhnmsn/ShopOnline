@@ -1,0 +1,307 @@
+.main__container{
+    max-width: 1770px;
+    
+    margin: 0 auto;
+}
+
+.main__banner {
+    background-image: url("../img/banner-laptop.jpeg");
+    height: 480px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 60px;
+}
+
+.main__banner-text {
+    color: rgb(255, 255, 255);
+    display: block;
+    font-family: Lato;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 0%;
+    padding-top: 145px;
+    padding-left: 112px;
+}
+
+.main__banner-text-small {
+    color: rgb(255, 255, 255);
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 0%;
+    padding-top: 100px;
+    padding-left: 823px;
+    margin-bottom: 13px;
+}
+
+.main__banner-list {
+    display: grid;
+    grid-template-rows: 78px;
+    grid-template-columns: 98px 126px 195px;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.list__text {
+    color: rgb(255, 255, 255);
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 0%;
+}
+
+.list__text span {
+    font-size: 60px;
+}
+
+.main__block {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr) ;
+    gap: 60px;
+    grid-template-areas: 
+    "book watch two-pair two-pair ideas ideas"
+    "sneaker sneaker two-pair two-pair sale sale"
+    "new-year new-year new-year new-year girl chemical"
+    "new-year new-year new-year new-year girl balls";
+}
+
+.block_1 {
+    grid-area: book;
+}
+.block_2 {
+    grid-area: watch;
+}
+.block_3 {
+    grid-area: two-pair;
+    
+}
+.block_4 {
+    grid-area: ideas;
+}
+.block_5 {
+    grid-area: sneaker ;
+}
+.block_6 {
+    grid-area: sale ;
+}
+.block_7 {
+    grid-area: new-year ;
+}
+.block_8 {
+    grid-area: girl ;
+}
+.block_9 {
+    grid-area: chemical ;
+}
+.block_9 img {
+    height: 245px;
+    width: 245px;
+}
+.block_10 {
+    grid-area: balls ;
+}
+
+@media(max-width:1024px) {
+    .main__container{
+        max-width: 940px;
+        padding-top: 60px;
+    }
+    .main__banner {
+        background-image: url("../img/banner-png.png");
+        height: 314px;
+    }
+    .main__banner-text {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 130%;
+        letter-spacing: 0%;
+        padding-top: 80px;
+        padding-left: 80px;
+    }
+    .main__banner-text-small {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 130%;
+        letter-spacing: 0%;
+        padding-top: 64px;
+        padding-left: 409px;
+    }
+    .list__text {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 130%;
+        letter-spacing: 0%;
+    }
+    .list__text span {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 130%;
+        letter-spacing: 0%;
+    }
+    .main__banner-list {
+        grid-template-columns: 65px 82px 127px;
+        grid-template-rows: 52px;
+        column-gap: 20px;
+    }
+    .main__block {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(6, 217px) ;
+        gap: 24px;
+        grid-template-areas: 
+        "book watch two-pair two-pair"
+        "sneaker sneaker two-pair two-pair"
+        "ideas ideas girl chemical"
+        "sale sale girl balls"
+        "new-year new-year new-year new-year"
+        "new-year new-year new-year new-year";
+    }
+    .block_8 img {
+        height: 458px;
+    }
+    .block_4 img, .block_5 img, .block_6 img  {
+        height: 217px;
+    }
+    .block_9 img {
+        width: 217px;
+        height: 217px;
+    }
+    
+}
+
+@media(max-width:768px)  {
+    .main__container{
+        max-width: 700px;
+        padding-top: 50px;
+    }
+    .main__banner {
+        background-image: url("../img/banner-768.png");
+        height: 280px;
+    }
+    .main__banner-text {
+        font-size: 30px;
+        padding-top: 64px;
+        padding-left: 80px;
+    }
+    .main__banner-text-small {
+        font-size: 12px;
+        padding-top: 80px;
+        padding-left: 304px;
+        
+    }
+    .list__text {
+        font-size: 16px;
+    }
+    .list__text span {
+        font-size: 30px;
+    }
+    .main__banner-list {
+        grid-template-columns: 52px 66px 100px;
+        grid-template-rows: 39px;
+        column-gap: 10px;
+    }
+    .main__block {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 0.5fr 1fr;
+        grid-template-rows: repeat(12, 60px) ;
+        gap: 20px;
+        grid-template-areas: 
+        "book watch two-pair two-pair two-pair"
+        "book watch two-pair two-pair two-pair"
+        "sneaker sneaker two-pair two-pair two-pair"
+        "sneaker sneaker two-pair two-pair two-pair"
+        "ideas ideas two-pair two-pair two-pair"
+        "ideas ideas girl girl chemical"
+        "sale sale girl girl chemical"
+        "sale sale girl girl balls"
+        "new-year new-year new-year new-year new-year"
+        "new-year new-year new-year new-year new-year"
+        "new-year new-year new-year new-year new-year"
+        "new-year new-year new-year new-year new-year";
+    }
+    .block_1 img, .block_2 img, .block_9 img {
+        width: 140px;
+        height: 140px;
+    }
+    .block_4 img, .block_5 img, .block_6 img {
+        width: 300px;
+        height: 140px;
+    }
+    .block_8 img {
+        width: 220px;
+        height: 220px;
+        opacity: 0;
+    }
+    .block_10 img{
+        width: 140px;
+        height: 60px;
+    }
+    .block_8 {
+        background-image: url("../img/girl-768.png");
+        background-repeat: no-repeat;
+    }
+}
+
+@media(max-width:320px) {
+    .main__container{
+        max-width: 280px;
+        padding-top: 41px;
+    }
+    .main__banner {
+        background-image: url("../img/banner-320.png");
+        height: 340px;
+        margin-bottom: 20px;
+    }
+    .main__banner-text {
+        font-size: 22px;
+        width: 279px;
+        padding-left: 29px;
+        padding-top: 50px;
+    }
+    .main__banner-text-small {
+        font-size: 8px;
+        padding-top: 180px;
+        padding-left: 110px;
+        
+    }
+    .list__text {
+        font-size: 12px;
+    }
+    .list__text span {
+        font-size: 20px;
+    }
+    .main__banner-list {
+        grid-template-columns: 38px 51px 73px;
+        grid-template-rows: 29px;
+        column-gap: 8px;
+    }
+    .main__block {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(9, 130px) ;
+        gap: 20px;
+        grid-template-areas: 
+        "book watch"
+        "sneaker sneaker"
+        "two-pair two-pair"
+        "two-pair two-pair"
+        "ideas ideas"
+        "sale sale"
+        "girl chemical"
+        "girl balls"
+        "new-year new-year";
+    }
+    .block_8 img {
+        opacity: 1;
+        height: 280px;
+    }
+    .block_10 img{
+        width: 130px;
+        height: 130px;
+    }
+    
+}

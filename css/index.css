@@ -5,7 +5,7 @@
 }
 
 .article__back { 
-    white-space: pre-wrap;
+    
     content: "";
     display: flex;
     background-image: url('../img/backspace.svg');
@@ -36,3 +36,6 @@
 .article__text {
     line-height: 20px;
 }
+
+
+
