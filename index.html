@@ -19,18 +19,21 @@
 <body>
     <header class="header"> 
         <div class="container header__container"> 
-            <nav class="header__nav nav"> 
-                <ul class="nav__list list">
-                    <li class="list__1"><a class="nav__link" href="index.html"> Shop<span class="nav__word">Online</span></a>  </li> 
-                    <li class="list__2"> <a class="nav__link-menu" href="#"> <img class="nav__link-img" src="img/menu_sort.png" alt="sort">  Меню</a></li> 
-                    <li class="list__3"> <input class="nav__input" type="text" placeholder="Я ищу..."> 
-                        <a class="nav__input-link" href="#"> <img class="nav__input-img" src="img/search.png" alt="search"> </a>   </li> 
-                    
-                        <li class="nav__mini-img list__4">   <img src="img/person.png" alt="person"><p class="nav__mini-img-text"> Профиль</p></li>  
-                        <li class="nav__mini-img list__5">   <img src="img/bascet.png" alt="person"><p class="nav__mini-img-text"> Корзина</p></li> 
-                        <li class="nav__mini-img list__6">   <img src="img/favorite.png" alt="person"><p class="nav__mini-img-text"> Избранное</p></li> 
+                
+                <ul class="header__list list">
+                    <li class="list__1"><a class="header__link" href="index.html"> Shop<span class="header__word">Online</span></a>  </li> 
+                    <li class="list__2"> <button class="header__button"> Меню </button>
+                    <li class="list__3">
+                        <form class="header__form" ction="#url server" method="post"> 
+                            <input class="header__input" type="text" placeholder="Я ищу..."> 
+                            <button class="header__button-search" type="submit"> </button>
+                        </form>
+                    </li> 
+                        <li class="header__mini-img list__4"> <a href="#">  <img src="img/person.png" alt="person"><p class="header__mini-img-text"> Профиль</p> </a></li>  
+                        <li class="header__mini-img list__5"> <a href="#"> <img src="img/bascet.png" alt="person"><p class="header__mini-img-text"> Корзина</p> </a> </li> 
+                        <li class="header__mini-img list__6"> <a href="#"> <img src="img/favorite.png" alt="person"><p class="header__mini-img-text"> Избранное</p> </a></li> 
                     </ul>  
-            </nav>
+            
         </div>
     </header>
     <main> 
@@ -46,15 +49,17 @@
                     </ul>
             </div>
             <ul class="main__block block">
-                <li class="block_1"> <img src="img/small-book.jpeg" alt="img-block1"> </li>
-                <li class="block_2"> <img src="img/small-sale.jpeg" alt="img-block2"> </li>
-                <li class="block_3"> <img src="img/normal-2pair.jpeg" alt="img-block3"> </li>
-                <li class="block_4"> <img src="img/normal-ideas.jpeg" alt="img-block4"> </li>
-                <li class="block_5"> <img src="img/normal-sneaker.jpeg" alt="img-block5"> </li>
-                <li class="block_6"> <img src="img/normal-indecember.jpeg" alt="img-block6"> </li>
-                <li class="block_7"> <img src="img/big-2022.jpeg" alt="img-block7">  </li>
-                <li class="block_8"> <img src="img/normal-girl.jpeg" alt="img-block8"> </li>
-                <li class="block_9"> <img src="img/chemical.png" alt="img-block9"> </li>
+                <li class="block_1"> <div class="block1__container">  <img src="img/small-book.jpeg" alt="img-block1"> <p class="block1__text"> <span>Книга</span> - лучший подарок </p> </div> </li>
+                <li class="block_2"> <div class="block2__container"> <img src="img/small-sale.jpeg" alt="img-block2"> <p class="block2__text-m"> Время скидок!</p> <p class="block2__text"> -25%</p>  </div> </li>
+                <li class="block_3"> <div class="block3__container"><img src="img/normal-2pair.jpeg" alt="img-block3"> <p class="block3__text"> Вторая пара кроссовок 
+                    <span> В подарок! </span> </p>  </div>  </li>
+                <li class="block_4"> <div class="block4__container">  <img src="img/normal-ideas.jpeg" alt="img-block4">  <p class="block4__text"> Идеи новогодних 
+                    подарков</p> </div>  </li>
+                <li class="block_5"> <div class="block5__container"> <img src="img/normal-sneaker.jpeg" alt="img-block5"> <p class="block5__text"> -40%</p> </div>  </li>
+                <li class="block_6"> <div class="block6__container"> <img src="img/normal-indecember.jpeg" alt="img-block6">  <p class="block6__text-m"> Выгодно в декабре!</p> <p class="block6__text"> -15%</p></div> </li>
+                <li class="block_7">  <div class="block7__container"> <img src="img/big-2022.jpeg" alt="img-block7">  <p class="block7__text"> Новогодние  украшения</p></div>  </li>
+                <li class="block_8"> <div class="block8__container">  <img src="img/normal-girl.jpeg" alt="img-block8"> <p class="block8__text"> -55%</p> </div> </li>
+                <li class="block_9"> <div class="block9__container"> <img src="img/chemical.png" alt="img-block9"> <p class="block9__text-m"> На бытовую химию</p> <p class="block9__text"> -25%</p> </div> </li>
                 <li class="block_10"> <img src="img/small-balls.jpeg" alt="img-block10"> </li>
             </ul>
         </div>

@@ -11,6 +11,141 @@
     background-size: contain;
     margin-bottom: 60px;
 }
+.block1__container  {
+    position: relative;
+}
+.block1__text {
+    position: absolute;
+    top: 103px;
+    left: 41px;
+    color: rgb(255, 255, 255);
+    font-family: Lato;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0%;
+    white-space: nowrap;
+}
+.block1__text span {
+    font-weight: 700;
+    font-size: 38px;
+}
+.block2__container, .block5__container,
+.block6__container, .block4__container,
+.block3__container, .block8__container,
+.block9__container, .block7__container{
+    position: relative;
+}
+.block2__text, .block5__text, .block6__text, .block8__text, .block9__text  {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-family: Lato;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 0%;
+    color: rgb(255, 255, 255);
+    border: 1px solid transparent;
+    background: rgb(255, 189, 19);
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 21px;
+}
+.block7__text {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: rgb(249, 17, 85);
+    font-family: Lato;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    border-radius: 20px;
+    background: rgb(255, 255, 255);
+    width: 643px;
+    height: 115px;
+    padding: 30px 52px;
+}
+
+.block5__text, .block9__text {
+    top: 20px;
+    left: 20px;
+}
+.block6__text-m {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: rgb(255, 255, 255);
+    font-family: Lato;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 0%;
+}
+.block2__text-m {
+    position: absolute;
+    top: 58px;
+    left: 10px;
+    color: rgb(255, 255, 255);
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 0%;
+}
+.block9__text-m {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 250px;
+    color: rgb(255, 255, 255);
+    font-family: Lato;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 0%;
+    padding-bottom: 40px;
+    white-space: nowrap;
+}
+.block4__text {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    width: 340px;
+    color: rgb(255, 255, 255);
+    font-family: Lato;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 0%;
+}
+.block3__text {
+    position: absolute;
+    bottom: 22px;
+    left: 20px;
+    width: 510px;
+    height: 178px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background: rgb(56, 192, 235);
+    color: rgb(255, 255, 255);
+    font-family: Lato;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0%;
+    padding: 23px 29px;
+}
+.block3__text span {
+    font-size: 56px;
+    font-weight: 700;
+    text-transform: lowercase;
+}
 
 .main__banner-text {
     color: rgb(255, 255, 255);
@@ -170,7 +305,40 @@
         width: 217px;
         height: 217px;
     }
-    
+    .block1__text {
+        font-size: 24px;
+        left: 6px;
+    }
+    .block3__text {
+        width: 414px;
+        height: 146px;
+        font-size: 30px;
+        padding: 23px 37px;
+    }
+    .block3__text span {
+        font-size: 40px;
+    }
+    .block4__text  {
+        font-size: 30px;
+        left: 18px;
+    }
+    .block9__text-m {
+        font-size: 20px;
+        bottom: 1px;
+        padding-bottom: 14px;
+    }
+    .block6__text-m {
+        font-size: 30px;
+        left: 24px;
+    }
+    .block7__text {
+        font-size: 30px;
+        width: 513px;
+        height: 83px;
+        padding: 23px 0;
+        text-align: center;
+        
+    }
 }
 
 @media(max-width:768px)  {
@@ -244,6 +412,67 @@
         background-image: url("../img/girl-768.png");
         background-repeat: no-repeat;
     }
+    .block2__text, .block5__text, .block6__text, .block8__text, .block9__text {
+        bottom: 10px;
+        right: 10px;
+        font-size: 16px;
+        width: 50px;
+        height: 50px;
+        padding-top: 14px;
+    }
+    .block3__text {
+        width: 360px;
+        height: 61px;
+        font-size: 16px;
+        text-align: center;
+        padding: 0;
+        padding-top: 16px;
+        border-radius: 12px;
+    }
+    .block3__text span {
+        font-size: 26px;
+    }
+    .block2__text-m {
+        font-size: 16px;
+        top: 15px;
+        left: 5px;
+    }
+    .block1__text {
+        font-size: 20px;
+        top: 48px;
+        left: 10px;
+    }
+    .block1__text span {
+        font-size: 26px;
+    }
+    .block4__text {
+        font-size: 16px;
+        bottom: 20px;
+        left: 20px;
+        width: 136px;
+    }
+    .block6__text-m {
+        font-size: 16px;
+        left: 20px;
+        bottom: 20px;
+    }
+    .block5__text, .block9__text {
+        top: 10px;
+        left: 10px;
+    }
+    .block9__text-m {
+        font-size: 16px;
+        bottom: 21px;
+        left: 14px;
+    }
+    .block7__text {
+        width: 347px;
+        height: 68px;
+        font-size: 20px;
+        border-radius: 12px;
+    }
+
+
 }
 
 @media(max-width:320px) {
@@ -303,5 +532,68 @@
         width: 130px;
         height: 130px;
     }
-    
+    .block1__text {
+        font-size: 12px;
+        left: 10px;
+        top: 76px;
+    }
+    .block1__text span {
+        font-size: 16px;
+    }
+    .block2__text-m {
+        font-size: 12px;
+        top: 28px;
+        left: 10px;
+    }
+    .block2__text, .block5__text, .block6__text, .block8__text, .block9__text {
+        bottom: 5px;
+        right: 5px;
+    }
+    .block5__text, .block9__text {
+        top: 5px;
+        left: 5px;
+    }
+    .block3__text {
+        width: 260px;
+        height: 38px;
+        border-radius: 8px;
+        font-size: 12px;
+        padding-top: 9px;
+        left: 10px;
+        bottom: 10px;
+    }
+    .block3__text span {
+        font-size: 16px;
+    }
+    .block4__text {
+        font-size: 12px;
+        width: 181px;
+        left: 10px;
+        bottom: 16px;
+    }
+    .block6__text-m {
+        font-size: 12px;
+        left: 10px;
+        bottom: 16px;
+    }
+    .block9__text-m {
+        font-size: 12px;
+        left: 9px;
+        bottom: 10px;
+        padding: 0;
+    }
+    .block8__text {
+        bottom: 10px;
+        right: 10px;
+    }
+    .block7__text {
+        width: 250px;
+        height: 30px;
+        font-size: 12px;
+        border-radius: 6px;
+        left: 15px;
+        bottom: 10px;
+        padding: 0;
+        padding-top: 7px;
+    }
 }
