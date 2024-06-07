@@ -1,7 +1,7 @@
 .main__container{
     max-width: 1770px;
-    
     margin: 0 auto;
+    padding-top: 45px;
 }
 
 .main__banner {
@@ -24,7 +24,7 @@
     font-weight: 400;
     line-height: 130%;
     letter-spacing: 0%;
-    white-space: nowrap;
+    
 }
 .block1__text span {
     font-weight: 700;
@@ -69,7 +69,7 @@
     background: rgb(255, 255, 255);
     width: 643px;
     height: 115px;
-    padding: 30px 52px;
+    padding: 35px 37px;
 }
 
 .block5__text, .block9__text {
@@ -109,8 +109,6 @@
     font-weight: 700;
     line-height: 130%;
     letter-spacing: 0%;
-    padding-bottom: 40px;
-    white-space: nowrap;
 }
 .block4__text {
     position: absolute;
@@ -243,7 +241,7 @@
 @media(max-width:1024px) {
     .main__container{
         max-width: 940px;
-        padding-top: 60px;
+        padding-top: 30px;
     }
     .main__banner {
         background-image: url("../img/banner-png.png");
@@ -307,7 +305,7 @@
     }
     .block1__text {
         font-size: 24px;
-        left: 6px;
+        left: 10px;
     }
     .block3__text {
         width: 414px;
@@ -344,7 +342,8 @@
 @media(max-width:768px)  {
     .main__container{
         max-width: 700px;
-        padding-top: 50px;
+        padding-top: 25px;
+        
     }
     .main__banner {
         background-image: url("../img/banner-768.png");
@@ -462,8 +461,9 @@
     }
     .block9__text-m {
         font-size: 16px;
-        bottom: 21px;
+        bottom: 5px;
         left: 14px;
+        width: 100px;
     }
     .block7__text {
         width: 347px;
@@ -478,7 +478,7 @@
 @media(max-width:320px) {
     .main__container{
         max-width: 280px;
-        padding-top: 41px;
+        padding-top: 21px;
     }
     .main__banner {
         background-image: url("../img/banner-320.png");
